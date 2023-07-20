@@ -399,3 +399,57 @@ footer {
   .submit:hover {
     background-color: #EBE5DF
   }
+
+
+
+
+ @media (max-width: 600px) {
+    
+    .nav-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+   
+    #Me {
+        margin: 0;
+        width: 100%;
+    }
+
+   
+    .herobanner {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    
+    #header1 {
+        font-size: 24px;
+    }
+
+    #header2 {
+        font-size: 24px;
+    }
+
+    #header3 {
+        font-size: 16px;
+    }
+
+   
+    .text {
+        margin-top: 20px;
+    }
+
+   
+    .skills-columns {
+        flex-direction: column;
+    }
+
+   
+    .skills-column {
+        width: 100%;
+    }
+
+  
+}
