@@ -100,29 +100,74 @@ body { margin: 0;
     font-family: "Big shoulders display", sans-serif;
     text-align: left;
     margin-top: 25px;
-    
-    
+    opacity: 0;
+  animation: fadeIn 3s forwards;
 }
-#header1 {
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
+  #header1 {
     margin-left: 100px;
     font-size: 64px;
-}
-#header2 {
+    animation-delay: 0.5s;
+  }
+  #header2 {
     margin-left: 100px;
     font-size: 64px;
-}
-#header3 {
-  margin-left: 100px;
-  font-size: 32px;
-}
+    animation-delay: 1.5s;
+  }
+  #header3 {
+    margin-left: 100px;
+    font-size: 48px;
+    animation-delay: 2.5s;
+  }
+  #cta {
+    animation-delay: 3.5s;
+  }
+  
+ 
+
 
 .text {
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Shippori Mincho B1', serif;
-    margin-top: 300px;
-
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Shippori Mincho B1', serif;
+  margin-top: 275px;
+  opacity: 0; /* Initial opacity set to 0 */
+  animation: fadeIn 1s forwards; /* Apply fading-in animation */
+  animation-delay: 1.5s; 
 }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#arrow {
+  display: inline-block;
+  margin-left: 270px;
+  transform: translateY(10px); 
+  transition: transform 0.3s ease; 
+}
+
+@keyframes growShrink {
+  0% { transform: scale(1); } 
+  50% { transform: scale(2); } 
+  100% { transform: scale(1); } 
+}
+
+
+#arrow {
+  animation: growShrink 2s infinite; /
+}
+
+
+
+
 
 .skills-section {
   background-color: #EBE5DF;
